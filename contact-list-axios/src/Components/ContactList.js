@@ -3,9 +3,9 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Tab, Row, Col, ListGroup } from 'react-bootstrap';
-import ContactView from './ContactView'
+//import ContactView from './ContactView'
 
-class ContactList extends React.Component {
+class ContactList extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -45,13 +45,13 @@ class ContactList extends React.Component {
               <Col sm={8}>
                 <Tab.Content>
                   <Tab.Pane eventKey={this.state.favorites.id}>
-                  <ContactView image = {this.state.favorites.largeImageURL} 
+                  {/* <ContactView image = {this.state.favorites.largeImageURL} 
                               contactName = {this.state.favorites.contactName }
                               phone = {this.state.favorites.phone }
                               address = {this.state.favorites.address }
                               birthday = {this.state.favorites.birthday }
                               email = { this.state.favorites.email }
-                  />
+                  /> */}
                   </Tab.Pane>
                   <Tab.Pane eventKey={this.state.others.id}>
                  
