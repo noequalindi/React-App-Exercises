@@ -1,17 +1,21 @@
 import React, {Component} from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import {BrowserRouter as Router, Switch, Route } from 'react-router-dom' 
 import ContactList from './Components/ContactList'
+import Nav from './Components/Nav'
 class  App extends Component {
   render() {
     return (
-    <React.Fragment>
+    <Router>
     <div className="App">
-      <h1> Contact List </h1>
-      <ContactList />
+    <Nav />
+    <Switch>
+    <Route path="/" exact component={App}/>
+    <Route path="/contacts" exact component={ContactList}/>
+    </Switch>
     </div>
-    </React.Fragment>
+    </Router>
   );
 }
 }
