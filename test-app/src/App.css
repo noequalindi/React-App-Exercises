@@ -1,7 +1,8 @@
+@media (max-width: 1024px) {
 .App {
   text-align: center;
 }
-
+}
 .App-logo {
   height: 40vmin;
 }
@@ -19,4 +20,108 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+.card {
+  display: inline-block;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  text-align: left;
+  width: '20rem';
+
+}
+.title {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 5px;
+  color: #282c34
+}
+.favorite {
+  width: 20px;
+  height: 20px;
+  background-image: url('./img/FavoriteTrue.png');
+  background-position: 50% 50%;
+  float: left;
+  position: static;
+  margin-right: 5px;
+
+}
+.noFavorite {
+  width: 18px;
+  height: 18px;
+  background-image: url('./img/FavoriteFalse.png');
+  background-position: 50% 50%;
+  float: left;
+  position: static;
+  margin-right: 5px;
+}
+
+.userSmall {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+  background-image: url('./img/UserSmall.png');
+  background-position: 50% 50%;
+}
+.userName {
+  position: static;
+
+}
+.select {
+  max-height: 90px;
+}
+.select:hover {
+  cursor: pointer;
+  background: #EBEBEB
+}
+.subTitle {
+  color: gray;
+  font-size: 14px;
+  position: relative;
+  margin-left: 8px;
+
+}
+
+.back {
+  color: lightskyblue;
+  position: static;
+  font-size: 20px;
+  margin: 5px;
+}
+.back:hover {
+  cursor: pointer;
+  color: black;
+}
+.image {
+  display: block;
+  margin-top: 25px;
+margin-left: auto;
+margin-right: auto;
+  max-width: 200px;
+}
+.contactLink {
+  font-size: 20px;
+  color: #466FFD;
+  padding: 10px;
+  width: '20rem';
+  border: solid 1px #EBEBEB;
+}
+.titleName {
+  text-align: center;
+  size: 16px;
+}
+.subDetail {
+  text-align: center;
+  color: gray;
+  font-size: 12px;
+}
+.contacts {
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  width: '20rem';
+  border: solid 1px #EBEBEB;
 }
